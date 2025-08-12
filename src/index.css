@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans antialiased;
+  }
+
+  .aurora-background {
+    background: linear-gradient(-45deg, #171717, #231e39, #38bdf8, #171717);
+    background-size: 400% 400%;
+    animation: aurora 15s ease infinite;
+  }
+
+  /* Basic prose styling for blog content */
+  .prose {
+    line-height: 1.75;
+  }
+  .prose h2 {
+    @apply text-3xl font-bold mt-12 mb-4;
+  }
+  .prose p {
+    @apply mb-6;
+  }
+  .prose a {
+    @apply transition-colors;
+  }
+}
